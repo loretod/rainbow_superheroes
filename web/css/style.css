@@ -1,0 +1,176 @@
+/*style.css*/
+
+
+h1{
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+}
+
+h4{
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+}
+
+h5{
+  font-family: 'Bangers', cursive;
+  font-size: 2.5em;
+}
+
+p{
+  font-family: 'Molengo', sans-serif;
+}
+
+img{
+  vertical-align: center;
+}
+
+body {
+  position: relative;
+}
+
+nav
+{
+  opacity: .3; 
+}
+
+#title
+{
+  background-color: black;
+  color: white;
+  font-family: 'Bangers', cursive;
+  font-size: 5em;
+}
+
+#titletext
+{
+  font-family: 'Molengo', sans-serif;
+}
+
+#red
+{
+    background-color: red;
+    color: white;
+    width: 100px;
+}
+
+#modalTitleImage
+{
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
+
+.red-modal-header
+{
+  background-color: #FF95A0;
+  padding: 10px;
+}
+
+.orange-modal-header
+{
+  background-color: #FFCCB1;
+  padding: 10px;
+}
+
+.yellow-modal-header
+{
+  background-color: #FFFADA;
+  padding: 10px;
+}
+
+.green-modal-header
+{
+  background-color: #CEFACC;
+  padding: 10px;
+}
+
+.blue-modal-header
+{
+  background-color: #C9F9F8;
+  padding: 10px;
+}
+
+.bad-modal-header
+{
+  background-color: #E6E6E6;
+  padding: 10px;
+}
+
+
+#redbody
+{
+    background-color: #FF95A0;
+    height: 500px;
+}
+
+
+#orange
+{
+    background-color: orange;
+    width: 100px;
+}
+
+#orangebody
+{
+    background-color: #FFCCB1;
+    height: 500px;
+}
+
+#yellow
+{
+    background-color: yellow;
+    width: 100px;
+}
+
+#yellowbody
+{
+    background-color: #FFFADA;
+    height: 500px;
+}
+
+#green
+{
+    background-color: green;
+    width: 100px;
+}
+
+#greenbody
+{
+    background-color: #CEFACC;
+    height: 500px;
+}
+
+#blue
+{
+  background-color: blue;
+  width: 100px;
+}
+
+#bluebody
+{
+    background-color: #C9F9F8;
+    height: 500px;
+}
+
+#white
+{
+  width: 100px;
+}
+
+#black
+{
+  background-color: black;
+  width: 100px;
+}
+#badguysbody
+{
+    background-color: #E6E6E6;
+    height: 500px;
+}
+
+#cards
+{
+  background-color: #CCCCCC;
+  width: 100px;
+}
+

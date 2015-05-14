@@ -1,0 +1,665 @@
+<!--Rainbow Superhero
+by Loreto Dumitrescu
+for Multimedia Capstone- Spring 2015-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Welcome to Rainbow Superheroes</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="jquery.js"></script>  
+        <script src="js/bootstrap.js"> </script>
+        <script src="js/rainbow_superheroes.js"> </script>
+        <script src="responsivevoice.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+
+    </head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+<!-- Top Heading -->
+    <div class="container-fluid" id="title">
+        <h1>Meet the Rainbow Superheroes</h1>
+        <p class="lead" id="titletext">The Rainbow Superheroes are here to save the day. Their mission... protect us from illness, disease, and feeling lousy.</p>
+    </div>
+
+    <div role="tabpanel">
+
+<!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" id="red" class="active"><a href="#redbody" aria-controls="red" role="tab" data-toggle="tab"></a></li>
+
+    <li role="presentation" id="orange" class="col-md-2"><a href="#orangebody" aria-controls="orange" role="tab" data-toggle="tab"></a></li>
+
+    <li role="presentation" id="yellow" class="col-md-2"><a href="#yellowbody" aria-controls="yellow" role="tab" data-toggle="tab"></a></li>
+
+    <li role="presentation" id="green"><a href="#greenbody" aria-controls="gree" role="tab" data-toggle="tab"></a></li>
+
+    <li role="presentation" id="blue"><a href="#bluebody" aria-controls="blue" role="tab" data-toggle="tab"></a></li>
+
+    <li role="presentation" id="white"><a href="#whitebody" aria-controls="white" role="tab" data-toggle="tab"></a></li>
+
+    <li role="presentation" id="black"><a href="#badguysbody" aria-controls="badguys" role="tab" data-toggle="tab"></a></li>
+    <li role="presentation" id="cards"><a href="#cardsbody" aria-controls="cards" role="tab" data-toggle="tab"></a></li>
+  </ul>
+
+<!-- The Red Pane -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="redbody">
+      <div class="col-md-3">
+        <h5>The Royal Reds</h5>
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak(' The Royal Reds are rich in something called antioxidants which helps keep your cells young. They are super great at fighting cancer and keep your heart in tip top shape.');">   The Royal Reds are rich in something called antioxidants which helps keep your cells young. They are super great at fighting cancer and keep your heart in tip top shape.</p>
+          </br>
+          <strong>Click on us to find out more...</strong>
+      </div>
+
+<!-- Royal Red Buttons -->
+<div class="col-md-2" data-toggle="modal" data-target="#cherryModal">
+  <h4>Princess Cherry</h4>
+  <img src="images/cherries.png">
+</div>
+
+<div class="col-md-2"  data-toggle="modal" data-target="#cranberryModal" >
+  <h4>Prince Cranberry</h4>
+  <img src="images/cranberries.png">
+</div>
+
+<div class="col-md-2" data-toggle="modal" data-target="#strawberryModal">
+  <h4>Queen Strawberry</h4>
+  <img src="images/queen_strawberry.png">
+</div>
+
+<div class="col-md-2" data-toggle="modal" data-target="#tomatoModal">
+  <h4>King Tomato</h4>
+  <img src="images/king_tomato.png">
+</div>
+
+          <!-- Princess Cherry Modal -->
+          <div class="modal fade" id="cherryModal" tabindex="-1" role="dialog" aria-labelledby="cherryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="red-modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="cherryModalLabel"><img src="images/cherries.png" id="modalTitleImage"> Princess Cherry</h4>
+                </div>
+                <div class="modal-body">
+                  <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('   Rich in antioxidants, Princess Cherry contains anthrocyanin (reduces pain and inflammation) and has been known to fight off diabetes, cancer, and arthritis.');">  Rich in antioxidants, Princess Cherry contains anthrocyanin (reduces pain and inflammation) and has been known to fight off diabetes, cancer, and arthritis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Prince Cranberry Modal -->
+            <div class="modal fade" id="cranberryModal" tabindex="-1" role="dialog" aria-labelledby="cranberryModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="red-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="cranberryModalLabel"><img src="images/cranberries.png" id="modalTitleImage">Prince Cranberry</h4>
+                  </div>
+                  <div class="modal-body" id="cranberryModalBody">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Prince Cranberry is most famous for keeping your urinary tract healthy. He also helps the heart by lowering blood pressure and helps fight of a variety of cancers.');">  Prince Cranberry is most famous for keeping your urinary tract healthy. He also helps the heart by lowering blood pressure and helps fight of a variety of cancers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Queen Strawberry Modal -->
+            <div class="modal fade" id="strawberryModal" tabindex="-1" role="dialog" aria-labelledby="strawberryModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="red-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="strawberryModalLabel"><img src="images/queen_strawberry.png" id="modalTitleImage">Queen Strawberry</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Queen Strawberry a good source of folate, helping pregnant mommies. She also helps keep your immune system up and running.');">  Queen Strawberry a good source of folate, helping pregnant mommies. She also helps keep your immune system up and running.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- King Tomato Modal -->
+            <div class="modal fade" id="tomatoModal" tabindex="-1" role="dialog" aria-labelledby="tomatoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="red-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="tomatoModalLabel"><img src="images/king_tomato.png" id="modalTitleImage">King Tomato</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('King Tomato is a good source of lycopene, which helps fight off prostate cancer and also protects your heart.');">  King Tomato is a good source of lycopene, which helps fight off prostate cancer and also protects your heart.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+<!-- The Orange Pane -->
+    <div role="tabpanel" class="tab-pane fade" id="orangebody">
+      <div class="col-md-3">
+        <h5>The Orange Family</h5>
+        <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('The Oranges are rich in beta- carotene another great antioxidant which helps keep your eyes healthy and immune system fighting.');">   The Oranges are rich in beta- carotene another great antioxidant which helps keep your eyes healthy and immune system fighting.</p>
+      </div>
+
+<!-- Orange Buttons -->
+    <div class="col-md-2" data-toggle="modal" data-target="#orangeModal">
+      <h4>Outrageous Orange</h4>
+      <img src="images/orange.png">
+    </div>
+
+    <div class="col-md-2"  data-toggle="modal" data-target="#carrotModal" >
+      <h4>Carefree Carrot</h4>
+      <img src="images/carrot.png">
+    </div>
+
+    <div class="col-md-2" data-toggle="modal" data-target="#sweetPotatoModal">
+      <h4>Sassy Sweet Potato</h4>
+      <img src="images/sweet_potato.png">
+    </div>
+
+    <!-- Orange Modal -->
+            <div class="modal fade" id="orangeModal" tabindex="-1" role="dialog" aria-labelledby="orangeModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="orange-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="orangeModalLabel"><img src="images/orange.png" id="modalTitleImage">Outrageous Orange</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Orange is rich in choline which helps with sleep, muscles movement, learning and memory. He also gives the immune system a great boost because of all the Vitamin C he contain.');">  Orange is rich in choline which helps with sleep, muscles movement, learning and memory. He also gives the immune system a great boost because of all the Vitamin C he contain.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <!-- Carrot Modal -->
+            <div class="modal fade" id="carrotModal" tabindex="-1" role="dialog" aria-labelledby="carrotModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="orange-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="carrotModalLabel"><img src="images/carrot.png" id="modalTitleImage">Carefree Carrot</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Carrot is great at fighting many cancers such as prostate, lung, and Leukemia. He also plays a key role in keeping your vision on the up and up in case you're missing Vitamin A.');">  Carrot is great at fighting many cancers such as prostate, lung, and Leukemia. He also plays a key role in keeping your vision on the up and up in case you're missing Vitamin A.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <!-- Sweet Potato Modal -->
+            <div class="modal fade" id="sweetPotatoModal" tabindex="-1" role="dialog" aria-labelledby="sweetPotatoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="orange-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="sweetPotatoModalLabel"><img src="images/carrot.png" id="modalTitleImage">Sassy Sweet Potato</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Sweet Potato is a powerhouse rich in fiber (if you leave the skin on) who helps keep constipation away and fight diabetes. Along the way he also manages to fight off some cancers and lower your blood pressure.');">  Sweet Potato is a powerhouse rich in fiber (if you leave the skin on) who helps keep constipation away and fight diabetes. Along the way he also manages to fight off some cancers and lower your blood pressure.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+<!-- The Yellow Pane -->
+    <div role="tabpanel" class="tab-pane fade" id="yellowbody">
+      <div class="col-md-3">
+        <h5>The Yellow Family</h5>
+        <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Yellows are great at keeping your skin healthy, healing your cuts and wounds, and strengthening your bones and teeth.');">Yellows are great at keeping your skin healthy, healing your cuts and wounds, and strengthening your bones and teeth.</p>
+      </div>
+
+      <!-- Yellow Buttons -->
+    <div class="col-md-2" data-toggle="modal" data-target="#lemonModal">
+      <h4>Likeable Lemon</h4>
+      <img src="images/lemon.png">
+    </div>
+
+    <div class="col-md-2"  data-toggle="modal" data-target="#bananaModal" >
+      <h4>Buff Banana</h4>
+      <img src="images/banana.png">
+    </div>
+
+    <div class="col-md-2" data-toggle="modal" data-target="#pineappleModal">
+      <h4>Patient Pineapple</h4>
+      <img src="images/pineapple.png">
+    </div>
+
+    <!-- Lemon Modal -->
+            <div class="modal fade" id="lemonModal" tabindex="-1" role="dialog" aria-labelledby="lemonModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="yellow-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="lemonModalLabel"><img src="images/lemon.png" id="modalTitleImage">Likeable Lemon</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Way back in the day Lemon was great at fighting Scurvy at sea. Today she helps battle cancer, asthma, diabetes and heart disease. She's also a great at helping your body absorb Iron.');">  Way back in the day Lemon was great at fighting Scurvy at sea. Today she helps battle cancer, asthma, diabetes and heart disease. She's also a great at helping your body absorb Iron.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <!-- Banana Modal -->
+            <div class="modal fade" id="bananaModal" tabindex="-1" role="dialog" aria-labelledby="bananaModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="yellow-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="bananaModalLabel"><img src="images/banana.png" id="modalTitleImage">Buff Banana</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Banana can lower your risk for cancers and asthma. They are also great at helping you out when you get diarrhea and keeping your poops normal. Even better, Banana can help keep your memory sharp.');">  Banana can lower your risk for cancers and asthma. They are also great at helping you out when you get diarrhea and keeping your poops normal. Even better, Banana can help keep your memory sharp.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <!-- Pineapple Modal -->
+            <div class="modal fade" id="pineappleModal" tabindex="-1" role="dialog" aria-labelledby="pineappleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="yellow-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="pineappleModalLabel"><img src="images/pineapple.png" id="modalTitleImage">Patient Pineapple</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Pineapple is great at fighting digestion issues. She also has an enzyme called bromelain which decreases inflammation, joint pain, and arthritis. Being rich in fiber she's also great at keeping constipation away and battling diabetes.');">  Pineapple is great at fighting digestion issues. She also has an enzyme called bromelain which decreases inflammation, joint pain, and arthritis. Being rich in fiber she's also great at keeping constipation away and battling diabetes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+<!-- The Green Pane -->
+    <div role="tabpanel" class="tab-pane fade" id="greenbody">
+      <div class="col-md-3">
+        <h5>The Greens</h5>
+        <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('This family is known for their richness in Leutin and can help keep your eyes healthy as well as fight back cancer.');">This family is known for their richness in Leutin and can help keep your eyes healthy as well as fight back cancer.</p>
+      </div>
+
+      <!-- Green Buttons -->
+    <div class="col-md-2" data-toggle="modal" data-target="#broccoliModal">
+      <h4>Botanic Broccoli</h4>
+      <img src="images/broccoli.png">
+    </div>
+
+    <div class="col-md-2"  data-toggle="modal" data-target="#avocadoModal" >
+      <h4>Amazing Avocado</h4>
+      <img src="images/avocado.png">
+    </div>
+
+    <div class="col-md-2" data-toggle="modal" data-target="#spinachModal">
+      <h4>Spectacular Spinach</h4>
+      <img src="images/spinach.png">
+    </div>
+
+    <!-- Broccoli Modal -->
+            <div class="modal fade" id="broccoliModal" tabindex="-1" role="dialog" aria-labelledby="broccoliModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="green-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="broccoliModalLabel"><img src="images/broccoli.png" id="modalTitleImage">Botanic Broccoli</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Broccoli is great at fighting off cancer. But did you know he can also protect your skin from the rays of the sun?  He is also awesome at getting rid of inflammation in your body.');">  Broccoli is great at fighting off cancer. But did you know he can also protect your skin from the rays of the sun?  He is also awesome at getting rid of inflammation in your body.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- Avocado Modal -->
+            <div class="modal fade" id="avocadoModal" tabindex="-1" role="dialog" aria-labelledby="avocadoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="green-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="avocadoModalLabel"><img src="images/avocado.png" id="modalTitleImage">Amazing Avocado</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Avocado is rich in healthy fats which helps keep your hair and skin glowing. He also helps battle cancer and keeps helps your body get rid of toxic stuff. Avocado is also great for pregnant mommies.');">  Avocado is rich in healthy fats which helps keep your hair and skin glowing. He also helps battle cancer and keeps helps your body get rid of toxic stuff. Avocado is also great for pregnant mommies.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- Spinach Modal -->
+            <div class="modal fade" id="spinachModal" tabindex="-1" role="dialog" aria-labelledby="spinachModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="green-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="spinachModalLabel"><img src="images/spinach.png" id="modalTitleImage">Spectacular Spinach</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Spinach is key for strong bones, hair and skin. He's also full of magnesium which helps keep your heart beating, muscles moving, and energy going.');">  Spinach is key for strong bones, hair and skin. He's also full of magnesium which helps keep your heart beating, muscles moving, and energy going.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div> 
+
+<!-- The Violet Pane -->
+    <div role="tabpanel" class="tab-pane fade" id="bluebody">
+      <div class="col-md-3">
+        <h5>The Blue Violets</h5>
+        <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('The hue for this family comes from a nutrient called anthocyanins. It helps protect your cells from damage and can reduce the risk of cancer and heart disease.');">The hue for this family comes from a nutrient called anthocyanins. It helps protect your cells from damage and can reduce the risk of cancer and heart disease. </p>
+      </div>
+
+    <!-- Violet Buttons -->
+    <div class="col-md-2" data-toggle="modal" data-target="#blueberryModal">
+      <h4>Bodacious Blueberries</h4>
+      <img src="images/blueberries.png">
+    </div>
+
+    <div class="col-md-2"  data-toggle="modal" data-target="#grapeModal" >
+      <h4>Groovy Grapes</h4>
+      <img src="images/grapes.png">
+    </div>
+
+    <div class="col-md-2" data-toggle="modal" data-target="#eggplantModal">
+      <h4>Energentic Eggplant</h4>
+      <img src="images/eggplant.png">
+    </div>
+
+    <!-- Blueberry Modal -->
+            <div class="modal fade" id="blueberryModal" tabindex="-1" role="dialog" aria-labelledby="blueberryModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="blue-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="blueberryModalLabel"><img src="images/blueberries.png" id="modalTitleImage">Bodacious Blueberries</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Blueberries are awesome antioxidants. They are great at fighting off cancer and heart disease. Blueberry is also great at keeping your brain sharp as a tack.');">  Blueberries are awesome antioxidants. They are great at fighting off cancer and heart disease. Blueberry is also great at keeping your brain sharp as a tack.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- Grape Modal -->
+            <div class="modal fade" id="grapeModal" tabindex="-1" role="dialog" aria-labelledby="grapeModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="blue-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="grapeModalLabel"><img src="images/grapes.png" id="modalTitleImage">Groovy Grape</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Grapes are great at clearing out your heart from gunky cholesterol. She is also high in fiber which help kick constipation to the curb.');">  Grapes are great at clearing out your heart from gunky cholesterol. She is also high in fiber which help kick constipation to the curb.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <!-- Eggplant Modal -->
+            <div class="modal fade" id="eggplantModal" tabindex="-1" role="dialog" aria-labelledby="eggplantModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="blue-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="eggplantModalLabel"><img src="images/eggplant.png" id="modalTitleImage">Energetic Eggplant</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Eggplant is great at stopping tumors in their tracks and fighting back cancer. He also helps keep your brain healthy by keeping free radicals out.');">  Eggplant is great at stopping tumors in their tracks and fighting back cancer. He also helps keep your brain healthy by keeping free radicals out.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div> 
+
+<!-- The White Pane -->
+    <div role="tabpanel" class="tab-pane fade" id="whitebody">
+      <div class="col-md-3">
+        <h5>The Whites</h5>
+        <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Whites are a color also! Their nutrients help our bodies lower conditions bad for our heart like high blood pressure and cholesterol.');">   Whites are a color also! Their nutrients help our bodies lower conditions bad for our heart like high blood pressure and cholesterol.</p>
+      </div>
+
+      <!-- White Buttons -->
+    <div class="col-md-2" data-toggle="modal" data-target="#gingerModal">
+      <h4>Generous Ginger</h4>
+      <img src="images/ginger.png">
+    </div>
+
+    <div class="col-md-2"  data-toggle="modal" data-target="#garlicModal" >
+      <h4>Good for You Garlic</h4>
+      <img src="images/garlic.png">
+    </div>
+
+    <div class="col-md-2" data-toggle="modal" data-target="#mushroomModal">
+      <h4>Magnificent Mushroom</h4>
+      <img src="images/mushroom.png">
+    </div>
+
+    <!-- Ginger Modal -->
+            <div class="modal fade" id="gingerModal" tabindex="-1" role="dialog" aria-labelledby="gingerModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="white-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gingerModalLabel"><img src="images/ginger.png" id="modalTitleImage">Generous Ginger</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Ginger is the greatest for helping you with your stomach when you get car sick or feel gassy. She's also helpful when you have a cold, helps to treat burns when put on the skin, and used to ease your muscle pains.');">  Ginger is the greatest for helping you with your stomach when you get car sick or feel gassy. She's also helpful when you have a cold, helps to treat burns when put on the skin, and used to ease your muscle pains.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- Garlic Modal -->
+            <div class="modal fade" id="garlicModal" tabindex="-1" role="dialog" aria-labelledby="garlicModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="white-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="garlicModalLabel"><img src="images/garlic.png" id="modalTitleImage">Good for You Garlic</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Garlic is one of the world's best antibiotic! She's also a cancer buster beating back the lung, brain and prostate types. Garlic can also help keep your heart healthy.');">  Garlic is one of the world's best antibiotic! She's also a cancer buster beating back the lung, brain and prostate types. Garlic can also help keep your heart healthy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- Mushroom Modal -->
+            <div class="modal fade" id="mushroomModal" tabindex="-1" role="dialog" aria-labelledby="mushroomModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="white-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="mushroomModalLabel"><img src="images/mushroom.png" id="modalTitleImage">Magnificent Mushroom</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Mushroom is special since she has selenium, a nutrient many of the others do not have. Selenium is great for fighting off tumors and detoxify your body.');">  Mushroom is special since she has selenium, a nutrient many of the others do not have. Selenium is great for fighting off tumors and detoxify your body.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+<!-- The Bad Guys Pane -->
+    <div role="tabpanel" class="tab-pane fade" id="badguysbody">
+      <h5>The Bad Guys</h5>
+
+<!-- The Bad Guy Buttons -->
+  <div class="row">
+    <div class="col-md-3" data-toggle="modal" data-target="#heartDiseaseModal">
+      <h4>Hateful Heart Disease</h4>
+      <img src="images/heartdisease.png">
+    </div>
+
+    <div class="col-md-3"  data-toggle="modal" data-target="#dementiaModal" >
+      <h4>Devilish Dementia</h4>
+      <img src="images/dementia.png">
+    </div>
+
+    <div class="col-md-3" data-toggle="modal" data-target="#cancerModal">
+      <h4>Cruddy Cancer</h4>
+      <img src="images/cancer.png">
+    </div>
+
+    <div class="col-md-3" data-toggle="modal" data-target="#diabetesModal">
+      <h4>Dangerous Diabetes</h4>
+      <img src="images/diabetes.png">
+    </div>
+  </div>
+    
+  <div class="row">  
+    <div class="col-md-4" data-toggle="modal" data-target="#hyperModal">
+        <h4>Overactive Oscar</h4>
+        <img src="images/hyper.png">
+    </div>
+
+    <div class="col-md-4" data-toggle="modal" data-target="#constipationModal">
+      <h4>King Constipation</h4>
+      <img src="images/constipation.png">
+    </div>
+
+    <div class="col-md-4" data-toggle="modal" data-target="#asthmaModal">
+      <h4>Awful Asthma</h4>
+      <img src="images/asthma.png">
+    </div>
+  </div>
+  </div>
+  
+  <!-- Heart Disease Modal -->
+  <div class="modal fade" id="heartDiseaseModal" tabindex="-1" role="dialog" aria-labelledby="heartDiseaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bad-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="heartDiseaseModalLabel"><img src="images/heartdisease.png" id="modalTitleImage">Hateful Heart Disease</h4>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Hateful Heart Disease like to attack your heart which leaves you feeling tired and out of breath. Heart disease can be caused by things like clogged arteries because of high cholesterol levels. Factors like being over weight or not exercising make Hateful Heart Disease even more powerful.');">   Hateful Heart Disease like to attack your heart which leaves you feeling tired and out of breath. Heart disease can be caused by things like clogged arteries because of high cholesterol levels. Factors like being over weight or not exercising make Hateful Heart Disease even more powerful.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dementia Modal -->
+  <div class="modal fade" id="dementiaModal" tabindex="-1" role="dialog" aria-labelledby="dementiaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bad-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="dementiaModalLabel"><img src="images/dementia.png" id="modalTitleImage">Devilish Dementia</h4>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Develish Dementia takes great pride in attacking your brain. He steals your memories and make you confused. Dementia takes a long time to reak its havoc but slowly slowly he creeps in makes you forget. Exercising everyday and eating the right foods helps keep him away and ensure your mind is super sharp.');">   Develish Dementia takes great pride in attacking your brain. He steals your memories and make you confused. Dementia takes a long time to reak its havoc but slowly slowly he creeps in makes you forget. </br> Exercising everyday and eating the right foods helps keep him away and ensure your mind is super sharp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cancer Modal -->
+  <div class="modal fade" id="cancerModal" tabindex="-1" role="dialog" aria-labelledby="cancerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bad-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="cancerModalLabel"><img src="images/cancer.png" id="modalTitleImage">Cruddy Cancer</h4>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Crudy Cancer is a slient sneaky vilain. He creeps in undetected and mutates the cells of your body. Over time, these cancer cells grow and take over your good cells making you feel weak. Crudy Cancer does not discriminate and tries to go after many cells in your body like bone, blood, liver, lung, and brain.');">   Crudy Cancer is a slient sneaky vilain. He creeps in undetected and mutates the cells of your body. Over time, these cancer cells grow and take over your good cells making you feel weak. Crudy Cancer does not discriminate and tries to go after many cells in your body like bone, blood, liver, lung, and brain.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dangerous Diabetes Modal -->
+  <div class="modal fade" id="diabetesModal" tabindex="-1" role="dialog" aria-labelledby="diabetesModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bad-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="diabetesModalLabel"><img src="images/diabetes.png" id="modalTitleImage">Dangerous Diabetes</h4>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('When Dangerous Diabetes lurks around, this means you have too much sugar in you body. Sugar exists in most foods we eat and our body uses it for energy to move and stay active. Insuline made by our body, works like a lock to a door. When the door is open and unlocked, sugar can travel from our bloodstream into our cells giving us energy. Dangerous Diabetes likes to hide this key and keep the door locked leading to too much sugar in our bloodstream. Sugar that never makes it into our cells. Eating the right foods and staying active are a great way to keep Diabetes away from the key.');">   When Dangerous Diabetes lurks around, this means you have too much sugar in you body. Sugar exists in most foods we eat and our body uses it for energy to move and stay active. Insuline made by our body, works like a lock to a door. When the door is open and unlocked, sugar can travel from our bloodstream into our cells giving us energy. Dangerous Diabetes likes to hide this key and keep the door locked leading to too much sugar in our bloodstream. Sugar that never makes it into our cells. Eating the right foods and staying active are a great way to keep Diabetes away from the key.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Asthma Modal -->
+  <div class="modal fade" id="asthmaModal" tabindex="-1" role="dialog" aria-labelledby="asthmaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bad-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="asthmaModalLabel"><img src="images/asthma.png" id="modalTitleImage">Awful Asthma</h4>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Awful Asthma is just the worst! He goes after the airways in our lungs and makes it hard to breathe. When he attacks, you may feel tightness in your chest, cough, or wheeze. May things around us invite Astham into our body like second hand cigarette smoke, pet dander, dust mites, and air polution.');">   Awful Asthma is just the worst! He goes after the airways in our lungs and makes it hard to breathe. When he attacks, you may feel tightness in your chest, cough, or wheeze. May things around us invite Astham into our body like second hand cigarette smoke, pet dander, dust mites, and air polution.  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overactive Modal -->
+  <div class="modal fade" id="hyperModal" tabindex="-1" role="dialog" aria-labelledby="hyperModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bad-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hyperModalLabel"><img src="images/hyper.png" id="modalTitleImage">Overactive Oscar</h4>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('Overactive Oscar just won't sit still and keeps stopping you from paying attention to what's important. When Oscar is around suddenly you hear, see, and notice everything around you. So much is happening that your body can't figure out who or what to listen to. He also has a knack for getting you to squirm in your seat. What a little trouble maker he is.');">   Overactive Oscar just won't sit still and keeps stopping you from paying attention to what's important. When Oscar is around suddenly you hear, see, and notice everything around you. So much is happening that your body can't figure out who or what to listen to. He also has a knack for getting you to squirm in your seat. What a little trouble maker he is.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- King Constipation Modal -->
+  <div class="modal fade" id="constipationModal" tabindex="-1" role="dialog" aria-labelledby="constipationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bad-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="constipationModalLabel"><img src="images/constipation.png" id="modalTitleImage">King Constipation</h4>
+        </div>
+        <div class="modal-body">
+          <p><img src="images/play.png" type="button" onclick="responsiveVoice.speak('King Constipation is a tough guy to get rid of. He likes to hang out in your colon and makes your poop hard and painful to get out. He usually comes to visit when your don't drink enough liquids or eat foods with enough fiber (like the Rainbow Superheroes). Exercising regularly is also a great way to keep him away.');">   King Constipation is a tough guy to get rid of. He likes to hang out in your colon and makes your poop hard and painful to get out. He usually comes to visit when your don't drink enough liquids or eat foods with enough fiber (like the Rainbow Superheroes). Exercising regularly is also a great way to keep him away.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Download Pane -->
+    <div role="tabpanel" class="tab-pane fade" id="cardsbody">
+      <div class="col-md-2">
+      <h4>Get Your Rainbow Superhero Cards</h4>
+      <a href="images/Superhero Print Your Own.pdf"><img src= "images/superhero_download.png"></a>
+      </div>
+
+      <div class="col-md-2">
+      <h4>Get Your Bad Guys Cards</h4>
+      <a href="images/Bad Guy Print Your Own.pdf"><img src= "images/badguy_download.png" ></a>
+      </div>
+
+      <div class="col-md-2">
+      <h4>How To Play?</h4>
+      <a href="images/Game Directions.pdf"><img src= "images/howtoplay.png" ></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+</div>
+</body>
+
